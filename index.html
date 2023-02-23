@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript-Practical-II</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+  </head>
+<body>
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+ Back To Top <i class="fas fa-arrow-up"></i>
+</button>
+<div id="navbar" class="navigationcontainer">
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container navigationbar d-flex justify-content-between w-100 py-4">
+            <div class="row"> 
+                <div class="col-xs-12 col-sm-2">
+                    <a class="navbar-brand" href="#">Alex Turnwall</a>
+                </div>
+            </div>
+            <div class="row">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" role="search">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link btn" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn" onclick="scrolltoSection(about)">About us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn" onclick="scrolltoSection(imagessec)">Images</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn" onclick="scrolltoSection(Services)">Services</a>
+                      </li>
+                    </ul>
+                </div>      
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="public-body-container">
+  <div class="section homage-intro main-page-intro">
+    <div class="container">
+      <h1 class="h1 display-highlight">
+        Designer & <br>
+        Product Strategist
+      </h1>
+    </div>
+    <div class="bg-highlight mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+            <p class="lead subtitle">
+              I bring a founder's mentality to designing products, experiences, brands, and teams.
+            </p>
+          </div>
+        </div>
+        <div class="row p-t-lg mt-4">
+          <div class="col-xs-12 col-lg-2"></div>
+          <div class="col-xs-12 col-sm-10 col-md-5 col-lg-4">
+            <p class="">
+              I've spent over a decade working with teams to ship products that delight users and advance organizations' goals. 
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-5 col-lg-4">
+            <p class="">
+              Staff UX Design Lead @Verily. Previously Head of Design @Admithub, Chief Design Officer @BevSpot, Lecturer @Northeastern
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section p-b-3xl">
+  <div class="container">
+    <hr class="rule-lg">
+    <div class="row p-t-xs">
+      <div class="col-xs-12 col-md-2 p-r-md">
+        <div class="sticky">
+          <h2>Select Work 
+            <span class="hidden-xs hidden-sm"><br></span>
+            <a class="small nowrap" href="">All work</a>
+          </h2>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-10">
+        <hr class="rule hide-hr hidden-md hidden-lg">         
+  <div class="row gx-5 d-flex justify-content-around boxInner row-10">
+    <div class="col-xs-10 col-sm-6 rounded" style="background-image: url('img/hero-e1627578686659-750x584.png.webp'); height: 18rem;">
+      <span class="cs-thumb">
+        <span class="cs-thumb-image lazyloaded" style="background-image: url(&quot;img/hero-e1627578686659-750x584.png.webp&quot;);" data-back-webp="img/hero-e1627578686659-750x584.png.webp" data-back="https://www.turnwall.com/wp-content/uploads/2021/05/hero-e1627578686659-750x584.png"></span>
+      </span>
+    </div>
+    <div class="col-xs-10 mt-3 col-sm-4">
+      <span class="title-block p-t-lg">
+        <span class="project-status overline"> Case Study</span>
+        <h3>AdmitHub AI Suite</h3>
+        <p>Leading product design and user research of the SaaS platform helping educators use behavioral science to nudge students toward success</p>
+      </span>
+    </div>
+  </div>
+<hr class="rule">          
+          
+<div class="row gx-5 d-flex justify-content-around boxInner row-10">
+  <div class="col-xs-10 col-sm-6 rounded" style="background-image: url('img/brewery-hero-714x600.png.webp'); height: 18rem;">
+    <span class="cs-thumb">
+      <span class="cs-thumb-image lazyloaded" style="background-image: url(&quot;img/brewery-hero-714x600.png.webp&quot;);" data-back-webp="img/brewery-hero-714x600.png.webp" data-back="img/bs-hero-750x387.png"></span>
+    </span>
+  </div>
+  <div class="col-xs-10 mt-3 col-sm-4">
+    <span class="title-block p-t-lg">
+      <span class="project-status overline"> Case Study</span>
+      <h3>Connected Proof</h3>
+      <p>Designing the cross-device software for an industrial IoT platform to help make food and beverage production more sustainable</p>
+    </span>
+  </div>
+</div>
+<hr class="rule">     
+        <div class="row gx-5 d-flex justify-content-around boxInner row-10">
+          <div class="col-xs-10 col-sm-6 rounded" style="background-image: url('img/bs-hero-750x387.png'); height: 18rem;">
+            <span class="cs-thumb">
+              <span class="cs-thumb-image lazyloaded" style="background-image: url(&quot;img/bs-hero-750x387.png&quot;);" data-back-webp="img/bs-hero-750x387.png" data-back="img/bs-hero-750x387.png"></span>
+            </span>
+          </div>
+          <div class="col-xs-10 mt-3 col-sm-4">
+            <span class="title-block p-t-lg">
+              <span class="project-status overline"> Case Study</span>
+              <h3>BevSpot Inventory</h3>
+              <p>Leading the UX evolution of an industry-favorite app by working closely with customers and “taking over” their jobs for the day</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr class="rule">     
+
+  </div>
+</div>
+<hr class="rule hide-hr hidden-md hidden-lg" id="about"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+
+<div class="hire-page" >
+
+  <section class="section hire-top main-page-intro"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7  text-center">
+          <h1 class="display-highlight">About</h1>
+          <p class="intro">Designer, developer, and product strategist trying to move the needle.</p>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2 p-b-sm">
+          <img class="multiply lazyloaded" src="https://www.turnwall.com/wp-content/themes/turnwall_theme/images/hire/headshot.png" width="100%" height="auto" alt="" data-src="https://www.turnwall.com/wp-content/themes/turnwall_theme/images/hire/headshot.png" decoding="async" width="428" height="428"><noscript><img class="multiply" src="https://www.turnwall.com/wp-content/themes/turnwall_theme/images/hire/headshot.png" alt="" data-eio="l" /></noscript>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section> 
+    <div class="container">
+    </div>
+  </section>
+  
+  <section class="p-b-xl"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <p>I’ve been called a ‘pragmatic’ designer.<br>I take that as a compliment.</p>
+          <p>My professional work slants towards product design that can make a measurable impact. Usability over style. Stylish when called for.</p>
+          <p>Learning from your customers and shipping delightful, yet useful tools for them is both rewarding and challenging, which is why I've been drawn to working with early products, especially those where you can get to know your users personally.</p>
+          <p>I’ve had the privilege of working with some great teams on some truly impactful products, and have learned a thing or two along the way. I bring that experience to new ventures and try to share it with folks through mentoring and <a href="">writing</a>.</p>
+          <p>I tend to think about design like a founder, because I’ve been one. Balancing process and instinct, the goal is to find harmony between user delight and business strategy, as fast as you can deliver quality.</p>
+          <p>If this seems like your cup of tea, I'd be pleased to chat about your project needs. My availability is <a href="#contact" class="scroll">below</a>.</p>
+          <p>-Alex-</p>
+        </div>
+        <div class="col-xs-12 col-md-2"></div>
+        <div class="col-xs-12 col-md-2">
+          
+          <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAawAAAGsAQMAAAC7BgHvAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAC1JREFUGBntwTEBAAAAwiD7p14IX2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwCVb9AABx/gS0AAAAABJRU5ErkJggg==" alt="" data-src="https://www.turnwall.com/wp-content/themes/turnwall_theme/images/hire/headshot.png" decoding="async" class="lazyload" width="428" height="428" /><noscript><img src="https://www.turnwall.com/wp-content/themes/turnwall_theme/images/hire/headshot.png" alt="" data-eio="l" /></noscript> -->
+          
+          <p>
+            <a href="mailto:alex@turnwall.com">alex@turnwall.com</a>
+            <br>linkedin <a href="https://www.linkedin.com/in/alexturnwall/" target="_blank">/alexturnwall</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="beliefs" class="section hire-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-12 col-md-10">
+          <hr class="rule-lg">
+          <p class="overline">Modus Operandi</p>
+        </div>
+        
+        <div class="col-xs-2"></div>
+        <div class="col-xs-12 mt-2 col-md-9 h2 responsive-font-example">
+          <h2 style="font-size: calc(2.1rem);" >I believe that businesses can make a positive impact on people’s lives through the thoughtful application of technology and design.</h2>
+        </div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-12 mt-2 col-md-7 p-b-lg">
+          <p class="intro">I’m not particularly picky about my role or title, but I am selective about the teams I work with. My approach is informed by these beliefs, and I try to work with teams that share them:</p>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-xs-2"></div>
+        <div class="col-sm-3 p-b-sm">
+          <span class="h-numbers">1</span>
+          <h4>Design is a measurable strategic asset.</h4>
+          <p class="small">Good design can contribute directly to an organization's bottom line. According to multiple studies, organizations that value design consistently perform stronger on virtually all financial measures.</p>
+        </div>
+        <div class="col-sm-3 p-b-sm">
+          <span class="h-numbers">2</span>
+          <h4>Good design can make <span class="nowrap">life better.</span></h4>
+          <p class="small">From life-saving procedural instructions, to an easier-to-read ballot, to a more ergonomic product: design that we interact with everyday has the potential to make people's lives better (or worse). It is not simply an aesthetic treatment.</p>
+        </div>
+        <div class="col-sm-3 p-b-sm">
+          <span class="h-numbers">3</span>
+          <h4>Diversity in collaboration yields the best results.</h4>
+          <p class="small">Our audiences are global. We live in an interconnected world where no one person has all of the skills to make most of the products we use everyday. We need to work with partners who are diverse in background and discipline to create better products, services and organizations for the future.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2"></div>
+        
+        <div class="col-sm-3 p-b-md">
+          
+        </div>
+        <div class="col-sm-3 p-b-md">
+          <span class="h-numbers">4</span>
+          <h4>Technology should <span class="nowrap">feel easy.</span></h4>
+          <p class="small">Every user is different and one size should not fit all. The goal of interaction design is to create products or interfaces that will work best for an intended user. That means it might have to work equally well for many users with many different technologies—today's tech has to be flexible and adaptable.</p>
+        </div>
+        <div class="col-sm-3 p-b-md">
+          <span class="h-numbers">5</span>
+          <h4>Marketing can be a force for good.</h4>
+          <p class="small">Understanding consumer behavior and knowing how to learn what a customer wants can work towards the promotion of a social campaign just as effectively as it can promote a product. Harnessing that power for the right reasons is a worthwhile endeavor.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-sm-3 p-b-md">
+          <span class="h-numbers">6</span>
+          <h4>Great brands aren’t just <span class="nowrap">skin-deep.</span></h4>
+          <p class="small">You can’t throw a new logo and website up and call it a brand refresh (that is, in fact, an <em>identity</em>). Branding touches every facet of an organization and is reflected in everything an organization does, meaning corporate ethos and responsibility are more important than the design. </p>
+        </div>
+        <div class="col-sm-3 p-b-md">
+          <span class="h-numbers">7</span>
+          <h4>Trusting relationships produce better work, faster.</h4>
+          <p class="small">You trust me, I trust you; enough so that we both give honest opinions. This is how iteration produces better results, faster. Without this trust, it's hard to produce meaningful results. Trust takes effort, but it's worth it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="expertise" class="section hire-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-12 col-md-10">
+          <hr class="rule-lg">
+          <p class="overline">Expertise</p>
+          <h2>Technical design partner and manager; <br>happy sweating the small details <br>or leading projects and teams</h2>
+          
+
+          <div class="row p-t-lg">
+            <div class="col-xs-12">
+              <hr class="rule">
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <h3>Design</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+              <div class="row">
+                <div class="col-xs-12 col-md-4">
+                  <h4>UX + Research</h4>
+                  <p class="small">Make a product or service more compelling by implementing best practices, user research, and usability testing.</p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                  <h4>UI + Interaction</h4>
+                  <p class="small">Polished interaction design for software experiences on any screen size.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <h4>Brand + Identity</h4>
+                  <p class="small">Graphic design of identity and collateral that move organizations’ brand strategy forward.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <h4>Data Visualization</h4>
+                  <p class="small">Custom data visualizations and infographics to tell the story of your data. Possibly interactive, always engaging.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <h4>Design Systems</h4>
+                  <p class="small">Systematized design tools to enable your team to move faster with greater consistency. Can include front-end code assets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <hr class="rule">
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <h3>Code</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <h4>Component Systems</h4>
+                  <p class="small">Implementing interfaces and component systems for production. (Currently liking TypeScript, React, JSS, Sass.)</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <h4>Website + CMS</h4>
+                  <p class="small">Extensive experience designing and developing marketing websites, blogs, and microsites. (Sometimes JAMstack, still appreciating WordPress.)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <hr class="rule">
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <h3>Management</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <h5>Design + Product Orgs</h5>
+                  <p class="small">Growing internal design and product teams that make an impact (and engineers love working with).</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <h4>Agile</h4>
+                  <p class="small" >Helping product teams find their organizational stride to ship faster.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+
+</div>
+<hr class="rule hide-hr hidden-md hidden-lg" id="imagessec"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg">
+
+<div class="section p-b-xl" >
+  <div class="container">
+    <hr class="rule-lg" style="border: 4px solid rgb(0, 0, 0);">
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-8 col-md-7  text-center">
+        <h1 class="display-highlight">Images</h1>
+        <p class="intro">Designer, developer, and product strategist trying to move the needle.</p>
+      </div>
+    </div>
+    <!-- <hr class="rule-lg" /> -->
+  </div>
+	<div class="container">
+    <div class="row p-t-sm">
+      <div class="col-xs-12 col-md-2 p-r-md" style="height: 96%">
+        <div class="sticky">
+          <h2>Select Posts 
+            <span class="hidden-xs hidden-sm"><br></span>
+            <a class="small nowrap">All posts</a>
+          </h2>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-10">
+        <hr class="rule hidden-md  hidden-lg">
+        <article id="post-2317" class="post-2317 post type-post status-publish format-standard has-post-thumbnail hentry-art category-design tag-bicycles">
+  <div class="row row-10">
+    
+    <div class="col-sm-6 col-sm-7 col-xs-12">
+      
+      <p class="post-categories">Design</p> 
+      <header class="entry-header">
+        <h4>
+          <a href="" rel="bookmark" class="heading">Bicycles are my design inspiration—a Rapha 5×5 talk</a>
+        </h4> 
+      </header>
+      <p>I was recently invited to speak at an event called&nbsp;Rapha 5×5: Intervals on Design at Fresh Tilled Soil, a local design consultancy. It’s a traveling series of design talks that Rapha runs in different cities, and here’s the schtick: “5×5: Intervals on Design, a rapid-fire design talk where five creatives will talk for five minutes…</p>
+      <div class="entry-meta">
+        <!--  &nbsp; &bullet; &nbsp; -->
+        <span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 8</span> <span class="rt-label rt-postfix">minute read</span></span>        </div>
+    </div>
+
+    <div class="col-md-5 col-sm-5 col-xs-12 text-right">
+      <span>
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?bicycle" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?table" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?pen-table" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?reading" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?writting" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?watch" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></div>
+    </div>
+  </span>
+    <!-- <img width="360" height="240" src="https://www.turnwall.com/wp-content/uploads/2013/07/gerstner-tische-rotated-cover-e1374492107731-360x240.jpg" class="rounded attachment-thumbnail size-thumbnail wp-post-image lazyloaded" alt="" decoding="async" loading="lazy" data-src="https://www.turnwall.com/wp-content/uploads/2013/07/gerstner-tische-rotated-cover-e1374492107731-360x240.jpg"><noscript><img width="360" height="240" src="https://www.turnwall.com/wp-content/uploads/2013/07/gerstner-tische-rotated-cover-e1374492107731-360x240.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript> -->
+       
+    </div>
+
+  </div>
+</article>
+<hr class="rule-lg">
+<article id="post-1821" class="post-1821 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure tag-kayaking">
+  <div class="row row-10">
+    
+    <div class="col-sm-6 col-sm-7 col-xs-12">
+      
+      <p class="post-categories">
+  <a href="" rel="category tag">Adventure</a></p>       
+      
+      <header class="entry-header">
+        <h4>
+          <a class="heading" rel="bookmark">Talking to a giant tanker from a little plastic boat</a>
+        </h4> 
+      </header>
+      <p>It’s kayaking season here in New England, and as I was returning to the water this year I realized I needed to reacquaint&nbsp;myself with VHF radio usage. So I’m going to share this story from last summer in hopes that it helps some other kayakers in a similar situation, as I haven’t found a ton…</p>
+      <div class="entry-meta">
+        <!--  &nbsp; &bullet; &nbsp; -->
+        <span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 9</span> <span class="rt-label rt-postfix">minute read</span></span>        </div>
+    </div>
+
+    <div class="col-md-5 col-sm-5 col-xs-12 text-right">
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?factory" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?writting" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?watch" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?pen-table" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?table" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?book" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+    </div>
+    <!-- <img width="360" height="240" src="https://www.turnwall.com/wp-content/uploads/2013/07/gerstner-tische-rotated-cover-e1374492107731-360x240.jpg" class="rounded attachment-thumbnail size-thumbnail wp-post-image lazyloaded" alt="" decoding="async" loading="lazy" data-src="https://www.turnwall.com/wp-content/uploads/2013/07/gerstner-tische-rotated-cover-e1374492107731-360x240.jpg"><noscript><img width="360" height="240" src="https://www.turnwall.com/wp-content/uploads/2013/07/gerstner-tische-rotated-cover-e1374492107731-360x240.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript> -->
+       
+    </div>
+
+  </div>
+</article>
+<hr class="rule-lg">
+<article id="post-601" class="post-601 post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-css tag-herber-matter tag-html tag-illustration tag-karl-gerstner tag-knolling tag-paula-scher">
+  <div class="row row-10">
+    
+    <div class="col-sm-6 col-sm-7 col-xs-12">
+      
+      <p class="post-categories">Design</p>       
+      
+      <header class="entry-header">
+        <h4>
+          <a class="heading" rel="bookmark">Paying homage to (or stealing from) your inspiration</a>
+        </h4> 
+      </header>
+      <p>I had an idea for the new version of my site: I was going to illustrate objects using only HTML and CSS ( to show that I know how to do stuff with code), and make them look like they were neatly organized in a physical space*&nbsp;(which seems vaguely trendy) according to the underlying grid…</p>
+      <div class="entry-meta">
+        <!--  &nbsp; &bullet; &nbsp; -->
+        <span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 5</span> <span class="rt-label rt-postfix">minute read</span></span>        </div>
+    </div>
+
+    <div class="col-md-5 col-sm-5 col-xs-12 text-right">
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?books" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?house" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?pen-table" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?reading" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?writting" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript></div>
+        <div class="item"><img width="360" height="240" src="https://source.unsplash.com/414x414/?watch" class="attachment-thumbnail rounded size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></div>
+    </div>
+    <!-- <img width="360" height="240" src="https://www.turnwall.com/wp-content/uploads/2013/07/gerstner-tische-rotated-cover-e1374492107731-360x240.jpg" class="rounded attachment-thumbnail size-thumbnail wp-post-image lazyloaded" alt="" decoding="async" loading="lazy" data-src="https://www.turnwall.com/wp-content/uploads/2013/07/gerstner-tische-rotated-cover-e1374492107731-360x240.jpg"><noscript><img width="360" height="240" src="https://www.turnwall.com/wp-content/uploads/2013/07/gerstner-tische-rotated-cover-e1374492107731-360x240.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-eio="l" /></noscript> -->
+       
+    </div>
+
+  </div>
+</article>		 
+ </div>
+    </div>
+	</div>
+</div>
+<hr class="rule hide-hr hidden-md hidden-lg" id="Services"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg">
+
+<section id="consulting" class="section hire-white">
+  <div class="container">
+    <div class="container">
+      <hr class="rule-lg" style="border: 4px solid rgb(0, 0, 0);">
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-8 col-md-7  text-center">
+          <h1 class="display-highlight">Services</h1>
+          <p class="intro">Designer, developer, and product strategist trying to move the needle.</p>
+        </div>
+      </div>
+      <!-- <hr class="rule-lg" /> -->
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-2"></div>
+      <div class="col-xs-12 col-md-10">
+
+        <hr class="rule-lg">
+        <div class="row p-b-md">
+          <div class="col-xs-12 col-md-8">
+            <p class="overline">Consulting</p>
+            <h2>A fresh set of eyes, seamlessly integrated into your team</h2>
+            <p class="intro">Teams may find me a good fit when they need an experienced contributor who can hit the ground running, tackle complex technical designs, help scope open-ended product challenges, and build design teams and culture.</p>
+          </div>
+        </div>
+        
+        <div class="row pb-lg">
+          <div class="col-xs-12 col-sm-6 p-b-md">
+            <hr class="rule">
+            <h4>Product Strategy</h4>
+            <p>Helping organizations bring products to market, or "fail faster" to understand what their market really wants.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 p-b-md">
+            <hr class="rule">
+            <h4>Brand Strategy</h4>
+            <p>Work on a process to hone the authentic brand that’ll help you reach the right audience.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 p-b-md">
+            <hr class="rule">
+            <h4>Design Sprints</h4>
+            <p>Guide organizations though intensive design sprints to explore new product offerings in one week or less.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 p-b-md">
+            <hr class="rule">
+            <h4>Building Teams</h4>
+            <p>Working with organizations (especially startups) to figure out how to structure their product and design teams for operational success and scaling.</p>
+          </div>
+        </div>  
+
+        <div class="row pb-lg">
+          <div class="col-xs-12 p-b-sm">
+            <hr class="rule">
+          </div>
+          <div class="col-xs-10 col-sm-6 p-b-md">
+            <p>Every project is different—I adapt to your team and situation. This can mean delivering a specific project from end-to-end, working on retainer for a specific period, or being embedded on the team full-time to meet a milestone.</p> 
+            <p>Best to start with a chat to explore options.</p> 
+            <h5><a href="#contact" class="scroll"><span class="material-icons-outlined">south</span> Get Started</a></h5> 
+          </div>
+        </div>      
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer mt-5 hidden-print text-dark">
+  <div class="container">
+
+    <div class="row w-100 d-flex justify-content-between">
+      <div class="col-md-1 mt-4">
+        <p><a href="">Alex Turnwall</a></p>
+      </div>
+      <div class="col-md-5 mt-4">
+        <p>I’m a Boston-based designer, developer, and strategist. I <a href="">consult</a>, <a href="https://www.turnwall.com/articles/">write</a>, and speak about design, entrepreneurship and technology. You might also find me biking, kayaking, skiing, woodworking, or brewing.</p>
+      </div>
+      <div class="col-md-4 mt-4">
+        <p>Get in touch:</p>
+        <p class="small">
+          Email <a href="mailto:alex@turnwall.com">alex@turnwall.com</a>
+          <br>LinkedIn <a href="" target="_blank">/alexturnwall</a>
+        </p>
+      </div>
+    </div>
+    
+    <div class="row p-t-2xl mt-4">
+      <div class="col-md-2"></div>
+      <div class="col-md-10">
+        <p class="small light">Design and content © 2008-2023 by Alex Turnwall unless otherwise noted, all rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="SCRIPT/script.js"></script>
+  </body>
+</html>
