@@ -16,7 +16,8 @@ h1, h2, h3, h4, h5, h6, .header {
     top: 0;
     width: 100%;    
 }
-#btn-back-to-top {
+#btn-back-to-top { 
+    z-index: 100;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -173,4 +174,12 @@ p.small {
 }
 .w-badge {
     height:13px;width:13px;padding:0
+}
+.owl-prev{
+    width: 2rem;
+    height: 2rem;
+}
+.owl-next {
+    width: 2rem;
+    height: 2rem;
 }
