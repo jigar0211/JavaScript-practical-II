@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Javascript-Practical-II</title>
+    <title>Alex Turnwall</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,18 +14,15 @@
 <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
  Back To Top <i class="fas fa-arrow-up"></i>
 </button>
-<div id="navbar" class="navigationcontainer">
+<div id="nav-scroll" class="navigationcontainer">
     <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container navigationbar d-flex justify-content-between w-100 py-4">
+        <div class="container navigationbar d-flex justify-content-start w-100 py-3">
             <div class="row"> 
-                <div class="col-xs-12 col-sm-2">
-                    <a class="navbar-brand" href="#">Alex Turnwall</a>
+                <div class="col-xs-2 col-sm-2">
+                    <a class="navbar-brand" href="#"><span style="font-size: 1.4rem; font-weight: bold;">Alex Turnwall</span></a>
                 </div>
             </div>
-            <div class="row">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="row ms-1">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" role="search">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
@@ -43,17 +40,22 @@
                     </ul>
                 </div>      
             </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
     </nav>
 </div>
 <div class="public-body-container">
   <div class="section homage-intro main-page-intro">
-    <div class="container">
-      <h1 class="h1 display-highlight">
+    <div class="container display-highlight">
+      <h1 class="h1 responsive-font-example" style="font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700;">
         Designer & <br>
         Product Strategist
       </h1>
     </div>
+    <hr class="rule hide-hr hidden-md hidden-lg"> 
+    <hr class="rule hide-hr hidden-md hidden-lg"> 
     <div class="bg-highlight mt-4">
       <div class="container">
         <div class="row">
@@ -63,16 +65,19 @@
             </p>
           </div>
         </div>
+        <hr class="rule hide-hr hidden-md hidden-lg"> 
+        <hr class="rule hide-hr hidden-md hidden-lg"> 
+        <hr class="rule hide-hr hidden-md hidden-lg"> 
         <div class="row p-t-lg mt-4">
           <div class="col-xs-12 col-lg-2"></div>
           <div class="col-xs-12 col-sm-10 col-md-5 col-lg-4">
-            <p class="">
+            <p class="home-content">
               I've spent over a decade working with teams to ship products that delight users and advance organizations' goals. 
             </p>
           </div>
           <div class="col-xs-12 col-sm-10 col-md-5 col-lg-4">
-            <p class="">
-              Staff UX Design Lead @Verily. Previously Head of Design @Admithub, Chief Design Officer @BevSpot, Lecturer @Northeastern
+            <p class="home-content">
+              Staff UX Design Lead @Verily. Previously Head of Design <span class="hover-txt">@Admithub</span>, Chief Design Officer <span class="hover-txt">@BevSpot</span>, Lecturer @Northeastern
             </p>
           </div>
         </div>
@@ -81,12 +86,16 @@
   </div>
 </div>
 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+
 <div class="section p-b-3xl">
-  <div class="container">
-    <hr class="rule-lg">
+  <div class="container second-container">
+
+<hr class="rule hide-hr hidden-md hidden-lg"> 
     <div class="row p-t-xs">
       <div class="col-xs-12 col-md-2 p-r-md">
-        <div class="sticky">
+        <div class="sticky mt-4">
           <h2>Select Work 
             <span class="hidden-xs hidden-sm"><br></span>
             <a class="small nowrap" href="">All work</a>
@@ -150,17 +159,16 @@
 <hr class="rule hide-hr hidden-md hidden-lg"> 
 <hr class="rule hide-hr hidden-md hidden-lg"> 
 <hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg"> 
 
 <div class="hire-page" >
 
   <section class="section hire-top main-page-intro"> 
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-md-7  text-center">
-          <h1 class="display-highlight">About</h1>
-          <p class="intro">Designer, developer, and product strategist trying to move the needle.</p>
+        <div class="col-sm-8 col-md-7">
+          <h1 class="display-highlight" style="font-size: 7rem; font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700;">About</h1>
+          <hr class="rule hide-hr hidden-md hidden-lg"> 
+          <p class="intro" style="font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; font-size: 2rem;">Designer, developer, and product strategist trying to move the needle.</p>
         </div>
         <div class="col-md-3"></div>
         <div class="col-xs-4 col-sm-3 col-md-2 p-b-sm">
@@ -367,8 +375,6 @@
 <hr class="rule hide-hr hidden-md hidden-lg" id="imagessec"> 
 <hr class="rule hide-hr hidden-md hidden-lg"> 
 <hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg">
 
 <div class="section p-b-xl" >
   <div class="container">
@@ -503,8 +509,6 @@
 <hr class="rule hide-hr hidden-md hidden-lg" id="Services"> 
 <hr class="rule hide-hr hidden-md hidden-lg"> 
 <hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg">
 
 <section id="consulting" class="section hire-white">
   <div class="container">
@@ -513,10 +517,9 @@
       <div class="row d-flex justify-content-center">
         <div class="col-sm-8 col-md-7  text-center">
           <h1 class="display-highlight">Services</h1>
-          <p class="intro">Designer, developer, and product strategist trying to move the needle.</p>
+          <p class="p.intro-2">Designer, developer, and product strategist trying to move the needle.</p>
         </div>
       </div>
-      <!-- <hr class="rule-lg" /> -->
     </div>
     <div class="row">
       <div class="col-xs-12 col-md-2"></div>

@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6, .header {
 }
 .navigationcontainer
 {
-    z-index: 10;
+    z-index: 100;
     background: rgba(252, 252, 252, 1) !important;
     position: sticky;
     top: 0;
@@ -103,6 +103,11 @@ body.page-template-page-hire h2 {
 p.intro
 {
     font-size: 1.5rem;
+    border-bottom: 2px solid black;
+}
+p.intro-2
+{
+    font-size: 1.5rem;
 }
 p{
     margin-bottom: 1.2em;
@@ -136,12 +141,15 @@ p.small {
     border-top: 1px solid #9ea5a5;
     padding-top: 0.5em;
 }
-.place-sticky {
-    z-index: 3;
-    padding-left: calc( (100vw - 88vw) / 2);
-    width: 18vw;
-    height: 90%;
+.rule-lg{
+    border: 2px solid rgb(0, 0, 0);
 }
+.sticky {
+    position: sticky;
+    top: 96px;
+    z-index: 100;
+}
+
 .heading {
     font-size: 2rem; 
     color: inherit;
@@ -183,3 +191,21 @@ p.small {
     width: 2rem;
     height: 2rem;
 }
+.navbar-toggler{
+    margin-left: auto;
+}
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+    .responsive-font-example {
+      font-size: 7rem;
+    }
+  }
+  /* If the screen size is smaller than 1200px, set the font-size to 80px */
+  @media (max-width: 1199.98px) {
+    .responsive-font-example {
+      font-size: 3rem;
+    }
+  }
+ .second-container{
+    border-top: 2px solid black;
+ }
