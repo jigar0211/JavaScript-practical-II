@@ -43,3 +43,20 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav-scroll").style.top = "0";
+  } else {
+    document.getElementById("nav-scroll").style.top = "-500px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+$(document).ready(() => {
+  $(".somClass li a").on('click', (e) => {
+    $(".somClass li a").removeClass('active');
+    $(e.target).addClass('active');
+  });
+});

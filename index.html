@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Javascript-Practical-II</title>
+    <title>Alex Turnwall » Designer &amp; Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,46 +14,48 @@
 <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
  Back To Top <i class="fas fa-arrow-up"></i>
 </button>
-<div id="navbar" class="navigationcontainer">
-    <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container navigationbar d-flex justify-content-between w-100 py-4">
+<div id="nav-scroll" class="navigationcontainer">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container navigationbar d-flex justify-content-start py-4">
             <div class="row"> 
-                <div class="col-xs-12 col-sm-2">
-                    <a class="navbar-brand" href="#">Alex Turnwall</a>
+                <div class="col-xs-2 col-sm-2">
+                    <a class="navbar-brand" href="#"><span style="font-size: 1.5rem; font-weight: bold;">Alex Turnwall</span></a>
                 </div>
             </div>
-            <div class="row">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="row ms-5">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" role="search">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 somClass">
                       <li class="nav-item">
-                        <a class="nav-link btn" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link btn" onclick="scrolltoSection(about)">About us</a>
+                        <a class="nav-link" onclick="scrolltoSection(about)" href="#about">About us</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link btn" onclick="scrolltoSection(imagessec)">Images</a>
+                        <a class="nav-link " onclick="scrolltoSection(imagessec)" href="#Images">Images</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link btn" onclick="scrolltoSection(Services)">Services</a>
+                        <a class="nav-link " onclick="scrolltoSection(Services)" href="#services">Services</a>
                       </li>
                     </ul>
                 </div>      
             </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
     </nav>
 </div>
 <div class="public-body-container">
   <div class="section homage-intro main-page-intro">
-    <div class="container">
-      <h1 class="h1 display-highlight">
+    <div class="container display-highlight">
+      <h1 class="h1 responsive-font-example" style="font-family: 'Inter', sans-serif; font-weight: 700;">
         Designer & <br>
         Product Strategist
       </h1>
     </div>
+    <hr class="rule hide-hr hidden-md hidden-lg"> 
+    <hr class="rule hide-hr hidden-md hidden-lg"> 
     <div class="bg-highlight mt-4">
       <div class="container">
         <div class="row">
@@ -63,16 +65,19 @@
             </p>
           </div>
         </div>
+        <hr class="rule hide-hr hidden-md hidden-lg"> 
+        <hr class="rule hide-hr hidden-md hidden-lg"> 
+        <hr class="rule hide-hr hidden-md hidden-lg"> 
         <div class="row p-t-lg mt-4">
           <div class="col-xs-12 col-lg-2"></div>
           <div class="col-xs-12 col-sm-10 col-md-5 col-lg-4">
-            <p class="">
-              I've spent over a decade working with teams to ship products that delight users and advance organizations' goals. 
+            <p class="home-content">
+              I've spent over a decade working with teams to ship products that delight users and advance organizations' goals. <span class="hover-txt">Learn More</span>
             </p>
           </div>
           <div class="col-xs-12 col-sm-10 col-md-5 col-lg-4">
-            <p class="">
-              Staff UX Design Lead @Verily. Previously Head of Design @Admithub, Chief Design Officer @BevSpot, Lecturer @Northeastern
+            <p class="home-content">
+              Staff UX Design Lead @Verily. Previously Head of Design <span class="hover-txt">@Admithub</span>, Chief Design Officer <span class="hover-txt">@BevSpot</span>, Lecturer @Northeastern
             </p>
           </div>
         </div>
@@ -81,25 +86,28 @@
   </div>
 </div>
 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+<hr class="rule hide-hr hidden-md hidden-lg"> 
+
 <div class="section p-b-3xl">
-  <div class="container">
-    <hr class="rule-lg">
+  <div class="container second-container">
+
+<hr class="rule hide-hr hidden-md hidden-lg"> 
     <div class="row p-t-xs">
       <div class="col-xs-12 col-md-2 p-r-md">
-        <div class="sticky">
+        <div class="sticky mt-4">
           <h2>Select Work 
             <span class="hidden-xs hidden-sm"><br></span>
-            <a class="small nowrap" href="">All work</a>
+            <span class="hover-txt" style="font-size: 0.9rem;">All work</span>
           </h2>
+
         </div>
       </div>
       <div class="col-xs-12 col-md-10">
         <hr class="rule hide-hr hidden-md hidden-lg">         
-  <div class="row gx-5 d-flex justify-content-around boxInner row-10">
-    <div class="col-xs-10 col-sm-6 rounded" style="background-image: url('img/hero-e1627578686659-750x584.png.webp'); height: 18rem;">
-      <span class="cs-thumb">
-        <span class="cs-thumb-image lazyloaded" style="background-image: url(&quot;img/hero-e1627578686659-750x584.png.webp&quot;);" data-back-webp="img/hero-e1627578686659-750x584.png.webp" data-back="https://www.turnwall.com/wp-content/uploads/2021/05/hero-e1627578686659-750x584.png"></span>
-      </span>
+  <div class="row gx-5 d-flex justify-content-around boxInner row-10 p-3">
+    <div class="col-xs-10 col-sm-6 rounded" style="height: 22rem; width:38rem; overflow: hidden;">
+      <img src="img/hero-e1627578686659-750x584.png.webp" alt="">
     </div>
     <div class="col-xs-10 mt-3 col-sm-4">
       <span class="title-block p-t-lg">
@@ -111,11 +119,9 @@
   </div>
 <hr class="rule">          
           
-<div class="row gx-5 d-flex justify-content-around boxInner row-10">
-  <div class="col-xs-10 col-sm-6 rounded" style="background-image: url('img/brewery-hero-714x600.png.webp'); height: 18rem;">
-    <span class="cs-thumb">
-      <span class="cs-thumb-image lazyloaded" style="background-image: url(&quot;img/brewery-hero-714x600.png.webp&quot;);" data-back-webp="img/brewery-hero-714x600.png.webp" data-back="img/bs-hero-750x387.png"></span>
-    </span>
+<div class="row gx-5 d-flex justify-content-around boxInner row-10 p-3">
+  <div class="col-xs-10 col-sm-6 rounded" style="height: 22rem; width:38rem; overflow: hidden;">
+    <img src="img/brewery-hero-714x600.png.webp" alt="">
   </div>
   <div class="col-xs-10 mt-3 col-sm-4">
     <span class="title-block p-t-lg">
@@ -126,11 +132,9 @@
   </div>
 </div>
 <hr class="rule">     
-        <div class="row gx-5 d-flex justify-content-around boxInner row-10">
-          <div class="col-xs-10 col-sm-6 rounded" style="background-image: url('img/bs-hero-750x387.png'); height: 18rem;">
-            <span class="cs-thumb">
-              <span class="cs-thumb-image lazyloaded" style="background-image: url(&quot;img/bs-hero-750x387.png&quot;);" data-back-webp="img/bs-hero-750x387.png" data-back="img/bs-hero-750x387.png"></span>
-            </span>
+        <div class="row gx-5 d-flex justify-content-around boxInner row-10 p-3">
+          <div class="col-xs-10 col-sm-6 rounded" style="height: 22rem; width:38rem; overflow: hidden;">
+            <img src="img/bs-hero-750x387.png" alt="">
           </div>
           <div class="col-xs-10 mt-3 col-sm-4">
             <span class="title-block p-t-lg">
@@ -150,17 +154,15 @@
 <hr class="rule hide-hr hidden-md hidden-lg"> 
 <hr class="rule hide-hr hidden-md hidden-lg"> 
 <hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg"> 
 
 <div class="hire-page" >
 
   <section class="section hire-top main-page-intro"> 
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-md-7  text-center">
-          <h1 class="display-highlight">About</h1>
-          <p class="intro">Designer, developer, and product strategist trying to move the needle.</p>
+        <div class="col-sm-8 col-md-7">
+          <h1 class="display-highlight" style="font-size: 7rem; font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700;">About</h1>
+          <p class="intro" style="font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; font-size: 2rem;">Designer, developer, and product strategist trying to move the needle.</p>
         </div>
         <div class="col-md-3"></div>
         <div class="col-xs-4 col-sm-3 col-md-2 p-b-sm">
@@ -169,7 +171,11 @@
       </div>
     </div>
   </section>
-
+  <section> 
+    <div class="container">
+      <hr class="rule-lg">
+    </div>
+  </section>
   <section> 
     <div class="container">
     </div>
@@ -178,15 +184,16 @@
   <section class="p-b-xl"> 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-6 about-content">
           <p>I’ve been called a ‘pragmatic’ designer.<br>I take that as a compliment.</p>
           <p>My professional work slants towards product design that can make a measurable impact. Usability over style. Stylish when called for.</p>
           <p>Learning from your customers and shipping delightful, yet useful tools for them is both rewarding and challenging, which is why I've been drawn to working with early products, especially those where you can get to know your users personally.</p>
-          <p>I’ve had the privilege of working with some great teams on some truly impactful products, and have learned a thing or two along the way. I bring that experience to new ventures and try to share it with folks through mentoring and <a href="">writing</a>.</p>
+          <p>I’ve had the privilege of working with some great teams on some truly impactful products, and have learned a thing or two along the way. I bring that experience to new ventures and try to share it with folks through mentoring and <span class="hover-txt">writing</span>.</p>
           <p>I tend to think about design like a founder, because I’ve been one. Balancing process and instinct, the goal is to find harmony between user delight and business strategy, as fast as you can deliver quality.</p>
           <p>If this seems like your cup of tea, I'd be pleased to chat about your project needs. My availability is <a href="#contact" class="scroll">below</a>.</p>
           <p>-Alex-</p>
         </div>
+        <div class="col-xs-12 col-md-2"></div>
         <div class="col-xs-12 col-md-2"></div>
         <div class="col-xs-12 col-md-2">
           
@@ -367,27 +374,24 @@
 <hr class="rule hide-hr hidden-md hidden-lg" id="imagessec"> 
 <hr class="rule hide-hr hidden-md hidden-lg"> 
 <hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg">
 
-<div class="section p-b-xl" >
+<div class="section p-b-xl">
   <div class="container">
     <hr class="rule-lg" style="border: 4px solid rgb(0, 0, 0);">
     <div class="row d-flex justify-content-center">
-      <div class="col-sm-8 col-md-7  text-center">
+      <div class="col-sm-8 col-md-7 text-center">
         <h1 class="display-highlight">Images</h1>
         <p class="intro">Designer, developer, and product strategist trying to move the needle.</p>
       </div>
     </div>
-    <!-- <hr class="rule-lg" /> -->
   </div>
 	<div class="container">
     <div class="row p-t-sm">
       <div class="col-xs-12 col-md-2 p-r-md" style="height: 96%">
-        <div class="sticky">
+        <div class="sticky sticky-2">
           <h2>Select Posts 
             <span class="hidden-xs hidden-sm"><br></span>
-            <a class="small nowrap">All posts</a>
+            <span class="hover-txt"><a class="small nowrap" style="font-size: 0.9rem;">All posts</a></span>
           </h2>
         </div>
       </div>
@@ -401,7 +405,7 @@
       <p class="post-categories">Design</p> 
       <header class="entry-header">
         <h4>
-          <a href="" rel="bookmark" class="heading">Bicycles are my design inspiration—a Rapha 5×5 talk</a>
+          <a href="" rel="bookmark" class="heading"><span class="hover-txt2">Bicycles are my design inspiration—a Rapha 5×5 talk</span></a>
         </h4> 
       </header>
       <p>I was recently invited to speak at an event called&nbsp;Rapha 5×5: Intervals on Design at Fresh Tilled Soil, a local design consultancy. It’s a traveling series of design talks that Rapha runs in different cities, and here’s the schtick: “5×5: Intervals on Design, a rapid-fire design talk where five creatives will talk for five minutes…</p>
@@ -438,7 +442,7 @@
       
       <header class="entry-header">
         <h4>
-          <a class="heading" rel="bookmark">Talking to a giant tanker from a little plastic boat</a>
+          <a class="heading" rel="bookmark"><span class="hover-txt2">Talking to a giant tanker from a little plastic boat</span></a>
         </h4> 
       </header>
       <p>It’s kayaking season here in New England, and as I was returning to the water this year I realized I needed to reacquaint&nbsp;myself with VHF radio usage. So I’m going to share this story from last summer in hopes that it helps some other kayakers in a similar situation, as I haven’t found a ton…</p>
@@ -472,7 +476,7 @@
       
       <header class="entry-header">
         <h4>
-          <a class="heading" rel="bookmark">Paying homage to (or stealing from) your inspiration</a>
+          <a class="heading" rel="bookmark"> <span class="hover-txt2">Paying homage to (or stealing from) your inspiration</span></a>
         </h4> 
       </header>
       <p>I had an idea for the new version of my site: I was going to illustrate objects using only HTML and CSS ( to show that I know how to do stuff with code), and make them look like they were neatly organized in a physical space*&nbsp;(which seems vaguely trendy) according to the underlying grid…</p>
@@ -501,29 +505,25 @@
 	</div>
 </div>
 <hr class="rule hide-hr hidden-md hidden-lg" id="Services"> 
-<hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg"> 
-<hr class="rule hide-hr hidden-md hidden-lg">
+<hr class="rule hide-hr hidden-md hidden-lg" > 
+<hr class="rule hide-hr hidden-md hidden-lg" > 
 
 <section id="consulting" class="section hire-white">
   <div class="container">
     <div class="container">
-      <hr class="rule-lg" style="border: 4px solid rgb(0, 0, 0);">
       <div class="row d-flex justify-content-center">
-        <div class="col-sm-8 col-md-7  text-center">
-          <h1 class="display-highlight">Services</h1>
-          <p class="intro">Designer, developer, and product strategist trying to move the needle.</p>
+        <div class="col-sm-8 col-md-7 text-center">
+          <h1 class="display-highlight mt-3">Services</h1>
+          <p class="p.intro-2">Designer, developer, and product strategist trying to move the needle.</p>
         </div>
       </div>
-      <!-- <hr class="rule-lg" /> -->
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-2"></div>
+      <hr class="rule-lg">
       <div class="col-xs-12 col-md-10">
 
-        <hr class="rule-lg">
-        <div class="row p-b-md">
+        
+        <div class="row p-b-md justify-content-center">
           <div class="col-xs-12 col-md-8">
             <p class="overline">Consulting</p>
             <h2>A fresh set of eyes, seamlessly integrated into your team</h2>
@@ -574,34 +574,42 @@
   <div class="container">
 
     <div class="row w-100 d-flex justify-content-between">
-      <div class="col-md-1 mt-4">
-        <p><a href="">Alex Turnwall</a></p>
+      <div class="col-md-2 mt-4">
+        <p style="font-size: 1.2rem;"><a href=""> <span class="hover-txt" style="color: #ccc !important">Alex Turnwall</span></a></p>
       </div>
-      <div class="col-md-5 mt-4">
-        <p>I’m a Boston-based designer, developer, and strategist. I <a href="">consult</a>, <a href="https://www.turnwall.com/articles/">write</a>, and speak about design, entrepreneurship and technology. You might also find me biking, kayaking, skiing, woodworking, or brewing.</p>
+      <div class="col-md-6 mt-4">
+        <p style="margin-bottom: 1.2em; font-size: 1.2rem;">I’m a Boston-based designer, developer, and strategist. I <span class="hover-txt" style="color: #ccc !important">consult</span>, <span class="hover-txt" style="color: #ccc !important">write</span>, and speak about design, entrepreneurship and technology. You might also find me biking, kayaking, skiing, woodworking, or brewing.</p>
       </div>
       <div class="col-md-4 mt-4">
         <p>Get in touch:</p>
-        <p class="small">
-          Email <a href="mailto:alex@turnwall.com">alex@turnwall.com</a>
-          <br>LinkedIn <a href="" target="_blank">/alexturnwall</a>
+        <p class="small" style="font-size: 1.2rem;">
+          Email <a href="mailto:alex@turnwall.com"><span class="hover-txt" style="color:#ccc !important">alex@turnwall.com</span></a>
+          <br>LinkedIn <a href="" target="_blank"><span class="hover-txt" style="color:#ccc">/alexturnwall</span></a>
         </p>
       </div>
     </div>
-    
-    <div class="row p-t-2xl mt-4">
+    <hr class="rule hide-hr hidden-md hidden-lg"> 
+    <hr class="rule hide-hr hidden-md hidden-lg"> 
+    <hr class="rule hide-hr hidden-md hidden-lg"> 
+    <hr class="rule hide-hr hidden-md hidden-lg"> 
+    <div class="row p-t-2xl">
       <div class="col-md-2"></div>
       <div class="col-md-10">
-        <p class="small light">Design and content © 2008-2023 by Alex Turnwall unless otherwise noted, all rights reserved.
+        <p class="small light" style="color: #CCCCCC !important; font-size: 14px;">Design and content © 2008-2023 by Alex Turnwall unless otherwise noted, all rights reserved.
         </p>
       </div>
+       
+    <hr class="rule hide-hr hidden-md hidden-lg"> 
+    <hr class="rule hide-hr hidden-md hidden-lg"> 
+    <hr class="rule hide-hr hidden-md hidden-lg"> 
+    <hr class="rule hide-hr hidden-md hidden-lg">
     </div>
-
+ 
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <script src="SCRIPT/script.js"></script>
   </body>
