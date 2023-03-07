@@ -53,3 +53,10 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
+$(document).ready(() => {
+  $(".somClass li a").on('click', (e) => {
+    $(".somClass li a").removeClass('active');
+    $(e.target).addClass('active');
+  });
+});
